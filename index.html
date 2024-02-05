@@ -1135,7 +1135,7 @@
         > .elementor-motion-effects-container
         > .elementor-motion-effects-layer {
         background-color: transparent;
-        background-image: linear-gradient(180deg, #2a0754 0%, #01b46f 100%);
+        background-image: linear-gradient(180deg, #2a0754 0%, #f9a74e 100%);
       }
       .elementor-4557 .elementor-element.elementor-element-f9da3f0 {
         transition: background 0.3s, border 0.3s, border-radius 0.3s,
@@ -4016,6 +4016,24 @@
                           </style>
                           <div class="elementor-social-icons-wrapper elementor-grid">
                             <span class="elementor-grid-item">
+                              <a class="elementor-icon elementor-social-icon elementor-social-icon-kyc elementor-animation-grow-rotate elementor-repeater-item-6ee0042"
+                                 href=""
+                                 target="_blank">
+                                <span class="elementor-screen-only">KYC</span>
+                                <img src="wp-content/uploads/2023/09/kyc.png"style="width:auto;height:30px;" alt="" />
+                              </a>
+                            </span>     
+                            
+                            <span class="elementor-grid-item">
+                              <a class="elementor-icon elementor-social-icon elementor-social-icon-kyc elementor-animation-grow-rotate elementor-repeater-item-6ee0042"
+                                 href="https://www.cognitos.io/littlebonk-audit"
+                                 target="_blank">
+                                <span class="elementor-screen-only">Audit</span>
+                                <img src="wp-content/uploads/2023/09/audit.png"style="width:auto;height:30px;" alt="" />
+                              </a>
+                            </span>  
+                            
+                            <span class="elementor-grid-item">
                               <a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-animation-grow-rotate elementor-repeater-item-6ee0042"
                                  href="https://twitter.com/littlebonkbsc"
                                  target="_blank">
@@ -4023,6 +4041,7 @@
                                 <img src="wp-content/uploads/2023/09/twitter.png"style="width:auto;height:30px;" alt="" />
                               </a>
                             </span>
+
                             <span class="elementor-grid-item">
                               <a class="elementor-icon elementor-social-icon elementor-social-icon-telegram-plane elementor-animation-grow-rotate elementor-repeater-item-f781456"
                                  href="https://t.me/littlebonk"
@@ -5389,11 +5408,26 @@
                 <div class="elementor-widget-container">
                   <div class="elementor-social-icons-wrapper elementor-grid">
                     <span class="elementor-grid-item">
+                      <a class="elementor-icon elementor-social-icon elementor-social-icon-kyc elementor-animation-grow-rotate elementor-repeater-item-6ee0042" target="_blank" href="h#">
+                        <span class="elementor-screen-only">KYC</span>
+                        <img src="wp-content/uploads/2023/09/kyc.png"style="width:auto; height:25px;" alt="" />
+                      </a>
+                    </span> 
+                    
+                    <span class="elementor-grid-item">
+                      <a class="elementor-icon elementor-social-icon elementor-social-icon-audit elementor-animation-grow-rotate elementor-repeater-item-6ee0042" target="_blank" href="https://www.cognitos.io/littlebonk-audit">
+                        <span class="elementor-screen-only">Audit</span>
+                        <img src="wp-content/uploads/2023/09/audit.png"style="width:auto; height:25px;" alt="" />
+                      </a>
+                    </span> 
+                    
+                    <span class="elementor-grid-item">
                       <a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-animation-grow-rotate elementor-repeater-item-6ee0042" target="_blank" href="https://twitter.com/littlebonkbsc">
                         <span class="elementor-screen-only">Twitter</span>
                         <img src="wp-content/uploads/2023/09/twitter.png"style="width:auto; height:25px;" alt="" />
                       </a>
                     </span>
+
                     <span class="elementor-grid-item">
                       <a
                         class="elementor-icon elementor-social-icon elementor-social-icon-telegram-plane elementor-animation-grow-rotate elementor-repeater-item-f781456"
@@ -6423,37 +6457,7 @@
       </script>
       <!-- end Moving Stripes -->
     </div>
-    <script type="text/javascript">
-      jQuery(document).ready(function () {
-        function ucBackgroundOverlayPutStart() {
-          var objBG = jQuery(".unlimited-elements-background-overlay");
-          if (objBG.length == 0) return false;
-          objBG.each(function (index, bgElement) {
-            var objBgElement = jQuery(bgElement);
-            var targetID = objBgElement.data("forid");
-            var objTarget = jQuery('*[data-id="' + targetID + '"]');
-            if (objTarget.length == 0) return true;
-            var objVideoContainer = objTarget.children(
-              ".elementor-background-video-container"
-            );
-            if (objVideoContainer.length == 1)
-              objBgElement.detach().insertAfter(objVideoContainer).show();
-            else objBgElement.detach().prependTo(objTarget).show();
-            objBgElement.trigger("bg_attached");
-            objBgElement.addClass("uc-bg-attached");
-          });
-        }
-        ucBackgroundOverlayPutStart();
-        jQuery(document).on("elementor/popup/show", () => {
-          if (
-            jQuery(".unlimited-elements-background-overlay").not(
-              ".uc-bg-attached"
-            ).length
-          )
-            ucBackgroundOverlayPutStart();
-        });
-      });
-    </script>
+
     <script>
       /(trident|msie)/i.test(navigator.userAgent) &&
         document.getElementById &&
