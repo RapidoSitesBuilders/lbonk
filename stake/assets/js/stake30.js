@@ -53,10 +53,10 @@ function initialiseContracts() {
 
   getUserInfo().then(
     function (info) {
-      var tokenAmount = info.amount / 10 ** 9;
-      var pendingRewards = info.pendingRewards / 10 ** 9;
-      var balanceUser = info.balanceOf / 10 ** 9;
-      var totalStaked = info.totalStaked / 10 ** 9;
+      var tokenAmount = info.amount / 10 ** 18;
+      var pendingRewards = info.pendingRewards / 10 ** 18;
+      var balanceUser = info.balanceOf / 10 ** 18;
+      var totalStaked = info.totalStaked / 10 ** 18;
       console.log("info.totalStaked", info.totalStaked);
       var nextWithdrawl = new Date(info.unlockTime * 1000);
 
